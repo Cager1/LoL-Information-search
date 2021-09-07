@@ -684,6 +684,10 @@ export default {
 
     riotkey: "",
 
+    metaInfo: {
+      title: 'About Us'
+    },
+
     queIDs: [
       {
           "queueId": 0,
