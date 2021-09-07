@@ -685,7 +685,7 @@ export default {
     riotkey: "",
 
     metaInfo: {
-      title: 'About Us'
+      title: 'Hello'
     },
 
     queIDs: [
