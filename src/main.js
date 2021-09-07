@@ -4,11 +4,8 @@ import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import vuetify from './plugins/vuetify'
-import VueMeta from 'vue-meta';
 
 Vue.config.productionTip = false
-
-Vue.use(VueMeta);
 
 Vue.use(VueAxios, axios)
 

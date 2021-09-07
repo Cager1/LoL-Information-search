@@ -684,10 +684,13 @@ export default {
 
     riotkey: "",
 
+<<<<<<< HEAD
     metaInfo: {
       title: 'Hello'
     },
 
+=======
+>>>>>>> parent of 7ebf8f2 (New title)
     queIDs: [
       {
           "queueId": 0,
