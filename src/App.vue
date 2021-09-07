@@ -1056,6 +1056,7 @@ export default {
 
   methods: {
     async getSummoner (summoner) {
+      document.getElementById('searchBox').style.pointerEvents = 'none';
       this.matchInformations = [];
       this.maps = [],
       this.descriptions = [],
@@ -1215,6 +1216,7 @@ export default {
       this.winRating = (this.wins / (this.wins + this.losses)) * 100;
       this.winRating = Math.round(this.winRating);
       console.log(this.winRating);
+      document.getElementById('searchBox').style.pointerEvents = 'auto';
 
       document.querySelector("#loading").style.display = "none";
       document.querySelector("#main").style.display = "block";
