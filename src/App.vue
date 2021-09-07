@@ -34,12 +34,10 @@
     <v-main>
       <v-container id="main">
         <v-row>
-          <v-col cols="12">
-            <v-card
-              elevation="1"
-            >
-
-            <span><h1>{{ summonerData.name }}</h1></span>
+          <v-col cols="12" md="2">
+            
+            <v-card align="center" style="background-color: #FFFFFF">
+              <span><h1>{{ summonerData.name }}</h1></span>
             <div style="height: 130px;
             padding: 10px;">
             <v-img
@@ -64,12 +62,6 @@
                 </v-img>
               </v-img>
             </div>
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="12" md="2">
-            <v-card align="center" style="background-color: #FFFFFF">
               <v-img
                 contain
                 max-height="150"
