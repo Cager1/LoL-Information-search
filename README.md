@@ -1,4 +1,4 @@
-# youtubetomp3
+# LoL Information search
 
 ## Project setup
 ```
