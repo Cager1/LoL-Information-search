@@ -137,7 +137,7 @@
                       <thead>
                         <tr>
                           <th style="width: 16% !important;" class="text-center" >
-                            {{teams[i][1].win}}
+                            {{teams[i][0].win}}
                           </th>
                           <th style="width: 16% !important; max-width: 16%" class="text-center">
                             Username
@@ -371,7 +371,7 @@
                       <thead>
                         <tr>
                           <th style="width: 100px !important;"  class="text-center" >
-                            {{teams[i][1].win}}
+                            {{teams[i][0].win}}
                           </th>
                           <th style="width: 100px !important;" class="text-center">
                             Username
