@@ -10,10 +10,10 @@
     <v-app-bar flat app style="background-color: #BFEDEF;">
       <v-container>
         <v-row style="padding-top: 20px;">
-          <v-col cols="10" sm="5" md="3">
+          <v-col cols="3" md="3">
             <v-autocomplete  :items="Object.keys(regionsValues)" v-model="region"></v-autocomplete>
           </v-col>
-          <v-col cols="10" sm="6" md="3">
+          <v-col cols="6" md="3">
             <v-text-field id="searchBox"
               label="Enter your summoner name"
               v-model="summoner"
