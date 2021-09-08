@@ -1061,7 +1061,7 @@ export default {
       this.maps = [],
       this.descriptions = [],
       this.summonerScore = {};
-      this.riotkey = "RGAPI-2de131ea-307a-4c45-b3ec-015c520f5a4f";
+      this.riotkey = "RGAPI-a6bd6ae1-20a5-49d5-a0ca-9495286b764d";
       
       var keys = Object.keys(this.routingValues);
 
