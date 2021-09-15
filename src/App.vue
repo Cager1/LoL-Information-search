@@ -1076,10 +1076,8 @@ export default {
       var counter = false;
       await this.axios.get(summonerData).then((response) => {
         this.summonerData = response.data;
-        console.log(this.summonerData);
         this.puuid = this.summonerData.puuid;
       }).catch(error => {
-        console.log(error.message);
         counter = true;
       })
       if (counter == false) {
@@ -1093,7 +1091,6 @@ export default {
     async getMatchIds(matches) {
       await this.axios.get(matches).then((response) => {
         this.matchList = response.data;
-        console.log(this.matchList);
       })
       await this.getMatchInformation();
     },
@@ -1112,8 +1109,6 @@ export default {
     async getSummonerLeague() {
       await this.axios.get("https://" + this.regionapi + ".api.riotgames.com/lol/league/v4/entries/by-summoner/" + this.summonerID + "?api_key=" + this.riotkey).then((response) => {
         this.summonerLeague = response.data;
-        console.log("summonerLeague: ");
-        console.log(this.summonerLeague);
       })
       this.logData();
     },
@@ -1197,8 +1192,6 @@ export default {
           this.gameStarts[i] = this.gameStarts[i].toString() + " Hours ago";
         }
       }
-      console.log("summoner score");
-      console.log(this.summonerScore);
       if (this.summonerLeague[0].queueType == "RANKED_SOLO_5x5") {
         this.wins = this.summonerLeague[0].wins;
         this.losses = this.summonerLeague[0].losses;
@@ -1215,16 +1208,11 @@ export default {
 
       this.winRating = (this.wins / (this.wins + this.losses)) * 100;
       this.winRating = Math.round(this.winRating);
-      console.log(this.winRating);
       document.getElementById('searchBox').style.pointerEvents = 'auto';
 
       document.querySelector("#loading").style.display = "none";
       document.querySelector("#main").style.display = "block";
-      console.log(this.matchInformations);
-      console.log("Maps: ");
-      console.log(this.maps);
-      console.log("Descriptions: ");
-      console.log(this.descriptions);
+      
 
     }
   },
