@@ -1079,6 +1079,7 @@ export default {
         this.puuid = this.summonerData.puuid;
       }).catch(error => {
         counter = true;
+        console.log(error);
       })
       if (counter == false) {
         this.summonerID = this.summonerData.id;
