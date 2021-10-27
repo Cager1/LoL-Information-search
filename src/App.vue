@@ -85,7 +85,7 @@
                   <v-row>
                     <v-col cols="6" sm="3" md="3" align="center">
                     {{ descriptions[i] }} <br>
-                    {{ gameStarts[i] }} <br> <br>
+                    {{ gameStarts[i] }} <br><br>  
                     {{ summonerScore[i].result }}
                     </v-col>
                     <v-divider vertical style="margin-left: 10px;"></v-divider>
